@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['hostname'] = 'iyanlangfacebook.db.11165313.hostedresource.com';
+$db['default']['username'] = 'iyanlangfacebook';
+$db['default']['password'] = 'Fb123456!';
+$db['default']['database'] = 'iyanlangfacebook';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
