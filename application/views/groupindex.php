@@ -47,30 +47,13 @@
 				我的社团
 			</h3>
 			<ol class="unstyled">
+                            <?php foreach($groups['data'] as $key =>$val){ ?>
 				<li>
-					Lorem ipsum dolor sit amet
+					<?php echo "<a href='http://www.facebook.com/".$val['id']."'>".$val['name']."</a>";?>
 				</li>
-				<li>
-					Consectetur adipiscing elit
-				</li>
-				<li>
-					Integer molestie lorem at massa
-				</li>
-				<li>
-					Facilisis in pretium nisl aliquet
-				</li>
-				<li>
-					Nulla volutpat aliquam velit
-				</li>
-				<li>
-					Faucibus porta lacus fringilla vel
-				</li>
-				<li>
-					Aenean sit amet erat nunc
-				</li>
-				<li>
-					Eget porttitor lorem
-				</li>
+                                
+                                <?php }?>
+				
 			</ol>
 		</div>
 		<div class="span4">
@@ -78,33 +61,16 @@
 		</div>
 		<div class="span4">
 			<h3>
-				消息列表 <button class="btn btn-primary" type="button">增加消息</button>
+				消息列表 <button class="btn btn-primary" onclick="javascript:location.href='/facebook/addmsg'" type="button">Add Message</button>
 			</h3>
 			<ol>
+                            <?php foreach($my_msg as $k =>$v){ ?>
 				<li>
-					Lorem ipsum dolor sit amet <span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
+					<?php echo $v['content'];?> <span class="label label-inverse"><a href="/facebook/delmsg/<?php echo $v['id'];?>">删除</a></span> 
 				</li>
-				<li>
-					Consectetur adipiscing elit<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
-				<li>
-					Integer molestie lorem at massa<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
-				<li>
-					Facilisis in pretium nisl aliquet<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
-				<li>
-					Nulla volutpat aliquam velit<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
-				<li>
-					Faucibus porta lacus fringilla vel<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
-				<li>
-					Aenean sit amet erat nunc<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
-				<li>
-					Eget porttitor lorem<span class="label label-inverse">删除</span> <span class="label label-important">修改</span>
-				</li>
+                                
+                                <?php }?>
+				
 			</ol>
 		</div>
 	</div>

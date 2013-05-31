@@ -37,9 +37,17 @@
 <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
-		<br/><br/><br/>
-                  Your token is : <?php echo $token; ?><br />
-			 <button onclick="javascript:location.href='/facebook/direction'" class="btn btn-primary btn-large" type="button">立刻进入</button>
+				</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<form method="post">
+				<fieldset>
+                                    <legend>Add Message</legend> <textarea name="content"> </textarea>  <button type="submit" class="btn">Submit</button>
+				</fieldset>
+			</form>
 		</div>
 	</div>
 </div>

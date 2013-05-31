@@ -47,31 +47,13 @@
 				推荐朋友给小号
 			</h3>
 			<ul class="unstyled inline">
+				<?php foreach($friends['data'] as $key =>$val){ ?>
 				<li>
-					Friend 1 name
+					<?php echo "<a href='http://www.facebook.com/".$val['id']."'>".$val['name']."</a>";?>
 				</li>
-				<li>
-					Friend 2 name
-				</li>
-<li>
-					Friend 3 name
-				</li>
-<li>
-					Friend 4 name
-				</li>
-<li>
-					Friend 5 name
-				</li>
-<li>
-					Friend 6 name
-				</li>
-
-<li>
-					Friend 7 name
-				</li>
-<li>
-					Friend 8 name
-				</li>
+                                
+                                <?php }?>
+				
 			</ul>
 			<form class="form-search">
 				推荐给 <input type="text" class="input-medium search-query" placeholder="用户id" /> <button type="submit" class="btn">推荐</button>
